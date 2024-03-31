@@ -1,0 +1,36 @@
+// .info-jumbo {
+//   margin-top: 120px;
+// }
+
+.oldberg-info {
+  background-position: center center;
+  height: 1000px;
+  background-repeat: no-repeat;
+  width: auto;
+  background-size: cover;
+  background-image: url('./../../assets/img/1.jpg');
+}
+
+/* next size - tablet */
+@media (min-width: 768px) {
+  .oldberg-info {
+    height: 1300px;
+    background-image: url('./../../assets/img/2.jpg');
+  }
+}
+
+/* next size - tablet landscape and it covers desktop */
+@media (min-width: 1366px) {
+  .oldberg-info {
+    height: 1400px;
+    background-image: url('./../../assets/img/3.jpg');
+  }
+}
+
+/* next size - larger desktops */
+@media (min-width: 1766px) {
+  .oldberg-info {
+    height: 1600px;
+    background-image: url('./../../assets/img/4.jpg');
+  }
+}
