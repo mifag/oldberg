@@ -1,0 +1,29 @@
+.contacts {
+  background-image: url('./../../assets/img/wall.jpg');
+  background-size: cover;
+  height: 100vh;
+
+  .contacts-text {
+    margin-top: 120px;
+  }
+
+  h5,h6 {
+
+    font-family: '';
+  }
+
+  .link-dark, .text-dark {
+    opacity: 0.9;
+    text-decoration: none;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.music {
+  background-image: url('./../../assets/img/wall.jpg');
+  .music-text {
+
+  }
+}

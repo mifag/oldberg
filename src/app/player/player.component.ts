@@ -14,7 +14,9 @@ export class PlayerComponent{
   isPlaying: boolean = false;
   volume: number = 1;
 
-  constructor(public playerService: PlayerService) {}
+  constructor(public playerService: PlayerService) {
+    this.isPlaying = this.playerService.isPlaying;
+  }
 
   play(): void {
     this.playerService.play();

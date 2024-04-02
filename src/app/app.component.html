@@ -1,7 +1,7 @@
 <body class="main-page">
-
-  <nav class="navbar d-flex navbar-expand-lg bg-light bg-opacity-75">
-      <a class="navbar-brand mx-3 p-0" href="/">
+  <div class="container-fluid p-0 position-fixed navbar-info">
+    <nav class="navbar d-flex navbar-expand-lg bg-light bg-opacity-90">
+      <a class="navbar-brand mx-3 p-0" type="button" (click)="navigateToInfo()">
         <img class="img-logo mr-auto" src="./../assets/img/oldberg-logo.svg" alt="Logo">
       </a>
       <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -11,31 +11,21 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-5">
           <li class="nav-item mx-2">
-            <a class="nav-link" href="about"><h4>About</h4></a>
+            <a class="nav-link" type="button" (click)="navigateToAbout()"><h4>About</h4></a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="music"><h4>Music</h4></a>
+            <a class="nav-link" type="button" (click)="navigateToMusic()"><h4>Music</h4></a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="contacts"><h4>Contacts</h4></a>
+            <a class="nav-link" type="button" (click)="navigateToContacts()"><h4>Contacts</h4></a>
           </li>
         </ul>
       </div>
-    <div class="col-5 offset-4 col-sm-3 offset-sm-7 col-lg-2 offset-lg-10 position-fixed">
-<!--      <audio controls id="music">-->
-<!--        <source [src]="musicSource" type="audio/mpeg">-->
-<!--        Your browser does not support the audio element.-->
-<!--      </audio>-->
-
-<!--      <button class="btn btn-light" (click)="play()" [disabled]="isPlaying"><h5 class="mb-0">Play</h5></button>-->
-<!--      <button class="btn btn-light" (click)="pause()" [disabled]="!isPlaying"><h5 class="mb-0">Pause</h5></button>-->
-<!--      <div class="col-8 offset-2">-->
-<!--        <input type="range" class="form-range" min="0" max="1" step="0.1" [value]="musicService.volume"-->
-<!--               (input)="changeVolume($event)">-->
-<!--      </div>-->
+      <div class="col-5 offset-4 col-sm-3 offset-sm-7 col-lg-2 offset-lg-10 position-fixed">
         <app-player-component></app-player-component>
-    </div>
-  </nav>
+      </div>
+    </nav>
+  </div>
 
   <div>
     <router-outlet></router-outlet>
