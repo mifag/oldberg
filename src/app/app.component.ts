@@ -17,19 +17,31 @@ export class AppComponent {
 
   }
 
+  toggleNavbar(): void {
+    const navbarToggler = document.querySelector('.navbar-toggler') as HTMLElement;
+    const navbarCollapse = document.querySelector('.navbar-collapse') as HTMLElement;
+    if (navbarToggler && navbarCollapse) {
+      navbarCollapse.classList.remove('show');
+    }
+  }
+
   navigateToInfo(): void {
     this.router.navigate(['/info']);
+    this.toggleNavbar();
   }
 
   navigateToAbout(): void {
     this.router.navigate(['/about']);
+    this.toggleNavbar();
   }
 
   navigateToMusic(): void {
     this.router.navigate(['/music']);
+    this.toggleNavbar();
   }
 
   navigateToContacts(): void {
     this.router.navigate(['/contacts']);
+    this.toggleNavbar();
   }
 }
