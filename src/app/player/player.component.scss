@@ -1,0 +1,27 @@
+.form-range::-webkit-slider-thumb {
+  background: #7a7e80;
+}
+.form-range::-moz-range-thumb {
+  background: #363136;
+}
+.form-range::-ms-thumb {
+  background: #363136;
+}
+@media (prefers-reduced-motion: reduce) {
+  .form-range::-webkit-slider-thumb {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+.form-range::-webkit-slider-thumb:active {
+  background-color: #363136;
+}
+.form-range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0.5rem;
+  color: transparent;
+  cursor: pointer;
+  background-color: #d1d1d1;
+  border-color: transparent;
+  border-radius: 1rem;
+}

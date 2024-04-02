@@ -1,0 +1,9 @@
+
+  <div class="text-center p-0">
+    <button class="btn btn-light mx-2" (click)="play()" [disabled]="isPlaying"><h5 class="mb-0">Play</h5></button>
+    <button class="btn btn-light mx-2" (click)="pause()" [disabled]="!isPlaying"><h5 class="mb-0">Pause</h5></button>
+    <div class="col-8 offset-2">
+      <input type="range" class="form-range" min="0" max="1" step="0.1" [value]="playerService.volume"
+             (input)="changeVolume($event)" />
+    </div>
+  </div>

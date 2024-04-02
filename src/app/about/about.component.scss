@@ -1,0 +1,32 @@
+.about {
+  background-position: center center;
+  height: 900px;
+  background-repeat: no-repeat;
+  width: auto;
+  background-size: cover;
+  background-image: url('./../../assets/img/5.jpg');
+}
+
+/* next size - tablet */
+@media (min-width: 768px) {
+  .about {
+    height: 1300px;
+    background-image: url('./../../assets/img/6.jpg');
+  }
+}
+
+/* next size - tablet landscape and it covers desktop */
+@media (min-width: 1366px) {
+  .about {
+    height: 1000px;
+    background-image: url('./../../assets/img/7.jpg');
+  }
+}
+
+  /* next size - larger desktops */
+  @media (min-width: 1766px) {
+    .about {
+      height: 1000px;
+      background-image: url('./../../assets/img/8.jpg');
+    }
+  }
